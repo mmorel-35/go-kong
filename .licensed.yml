@@ -12,3 +12,4 @@ allowed:
 
 source_path:
   - kong
+  - tools
