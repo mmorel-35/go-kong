@@ -1,3 +1,6 @@
+sources:
+  go: true
+  
 allowed:
 - apache-2.0
 - bsd-2-clause
