@@ -13,3 +13,5 @@ allowed:
 source_path:
   - kong
   - tools
+
+shared_cache: true
