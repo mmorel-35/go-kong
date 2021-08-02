@@ -9,3 +9,6 @@ allowed:
 - mit
 - cc0-1.0
 - unlicense
+
+source_path:
+  - kong
