@@ -1,0 +1,22 @@
+name: Licensed
+on:
+  push:
+    branches:
+      - '**'
+    tags-ignore:    
+      - '**'
+jobs:
+  licenses:
+    steps:
+    # if using actions/checkout at major version 2 or greater,
+    # please set fetch-depth to a high number, or to 0.
+    # running this action can require access to more than just the latest commit on a branch
+    - uses: actions/checkout@v1
+    - uses: jonabc/setup-licensed@v1
+      with:
+        version: 2.x
+    - run: npm install # install your projects dependencies in local environment
+    - id: licensed
+      uses: jonabc/licensed-ci@v1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
