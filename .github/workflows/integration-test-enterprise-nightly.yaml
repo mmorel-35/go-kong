@@ -3,11 +3,11 @@ name: 'Integration Test : Enterprise Nightly'
 on:
   push:
     branches:
-    - 'main'
-    - 'release/*'
+      - 'main'
+      - 'release/*'
   pull_request:
     branches:
-    - '*'
+      - '*'
 
 jobs:
   test-enterprise:
